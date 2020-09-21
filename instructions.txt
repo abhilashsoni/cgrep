@@ -1,0 +1,5 @@
+1. run "make" for compilation
+2. run "alias cgrep='./cgrep.out' "
+3. now, run the queries. 
+	for example:  cgrep -n line sample.txt
+4. I have implemeted the default functionality and the ones provided by 4 options
