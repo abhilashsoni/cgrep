@@ -24,8 +24,8 @@ int main(int args, char** argv)
 	if(i) transform(pattern.begin(), pattern.end(), pattern.begin(), ::tolower);
 	if(w) 
 	{
-		pattern += ' ';
-		pattern.insert(0, " ");
+		pattern += "\\b";
+		pattern.insert(0, "\\b");
 	}
 	regex r(pattern);
 
@@ -63,7 +63,7 @@ int main(int args, char** argv)
 				if(n) cout<<lineno<<"\t";
 				cout<<line<<"\n";
 			}
-		}		
+		}
 	}
 	fin.close();
 	return 0;
